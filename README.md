@@ -9,7 +9,7 @@ This repos contains one part:
   EF: Entity Framework
   
 ## Author
-[Tran Van Dan Truong](https://www.facebook.com/Tran.Truong.MMCII)
+[Trần Văn Đan Trường](https://www.facebook.com/Tran.Truong.MMCII)
 
 ## License
 All are free.
