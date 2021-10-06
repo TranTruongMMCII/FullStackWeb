@@ -12,11 +12,7 @@ namespace DemoDBFirst
     using System;
     using System.Collections.Generic;
     
-    public partial class Student
+    public partial class Student : Person
     {
-        public int StudentID { get; set; }
-        public string StudentName { get; set; }
-        public string StudentGender { get; set; }
-        public string Address { get; set; }
     }
 }
