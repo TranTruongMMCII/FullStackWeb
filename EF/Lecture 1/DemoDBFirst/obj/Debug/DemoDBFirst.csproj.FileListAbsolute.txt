@@ -1,0 +1,12 @@
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\obj\Debug\DemoDBFirst.csproj.CoreCompileInputs.cache
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\bin\Debug\DemoDBFirst.exe.config
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\bin\Debug\DemoDBFirst.exe
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\bin\Debug\DemoDBFirst.pdb
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\bin\Debug\EntityFramework.dll
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\bin\Debug\EntityFramework.SqlServer.dll
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\bin\Debug\EntityFramework.xml
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\bin\Debug\EntityFramework.SqlServer.xml
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\obj\Debug\DemoDBFirst.csprojAssemblyReference.cache
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\obj\Debug\DemoDBFirst.csproj.CopyComplete
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\obj\Debug\DemoDBFirst.exe
+D:\Intern\Course\FullStackWeb\EF\Lecture 1\DemoDBFirst\obj\Debug\DemoDBFirst.pdb

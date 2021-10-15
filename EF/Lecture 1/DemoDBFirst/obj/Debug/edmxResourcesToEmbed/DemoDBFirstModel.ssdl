@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DemoDBFirstModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="People">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Gender" Type="nvarchar" MaxLength="100" />
+    <Property Name="Address" Type="nvarchar" MaxLength="100" />
+    <Property Name="Type" Type="int" />
+  </EntityType>
+  <EntityType Name="People_Officer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="People_Student">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="People_Trainer">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Officer_inherits_Person">
+    <End Role="People" Type="Self.People" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="People_Officer" Type="Self.People_Officer" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="People">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="People_Officer">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Student_inherits_Person">
+    <End Role="People" Type="Self.People" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="People_Student" Type="Self.People_Student" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="People">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="People_Student">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Trainer_inherits_Person">
+    <End Role="People" Type="Self.People" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="People_Trainer" Type="Self.People_Trainer" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="People">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="People_Trainer">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DemoDBFirstModelStoreContainer">
+    <EntitySet Name="People" EntityType="Self.People" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="People_Officer" EntityType="Self.People_Officer" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="People_Student" EntityType="Self.People_Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="People_Trainer" EntityType="Self.People_Trainer" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Officer_inherits_Person" Association="Self.FK_Officer_inherits_Person">
+      <End Role="People" EntitySet="People" />
+      <End Role="People_Officer" EntitySet="People_Officer" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Student_inherits_Person" Association="Self.FK_Student_inherits_Person">
+      <End Role="People" EntitySet="People" />
+      <End Role="People_Student" EntitySet="People_Student" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Trainer_inherits_Person" Association="Self.FK_Trainer_inherits_Person">
+      <End Role="People" EntitySet="People" />
+      <End Role="People_Trainer" EntitySet="People_Trainer" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
